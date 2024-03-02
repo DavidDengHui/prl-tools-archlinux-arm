@@ -40,6 +40,7 @@ case "$(uname -m)" in
 		;;
 	aarch64)
 		FLAG_CHECK_GUI="Yes"
+		[[ "$(uname -r)" == *"ARCH"* ]] && sudo pacman -S linux-aarch64-headers make dkms --noconfirm
 		exec "$INSTALLER_DIR/installer.aarch64"
 		;;
 	*)
