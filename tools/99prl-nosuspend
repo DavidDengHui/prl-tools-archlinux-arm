@@ -1,0 +1,26 @@
+#!/bin/sh
+# Copyright (c) 2004-2022 Parallels International GmbH.
+# All rights reserved.
+# http://www.parallels.com
+
+. "$PM_FUNCTIONS"
+
+case "${1}" in
+	suspend)
+		echo "Suspend is disabled by Parallels Tools because \
+it isn't supported by virtio GPU driver, which this Parallels VM uses \
+(virtio GPU driver used for all ARM-based VM and all Intel-based VM \
+with Linux kernel version greater or equal 5.10)."
+		inhibit
+		;;
+	hibernate)
+		echo "Hibernate is disabled by Parallels Tools because \
+it isn't supported by virtio GPU driver, which this Parallels VM uses \
+(virtio GPU driver used for all ARM-based VM and all Intel-based VM \
+with Linux kernel version greater or equal 5.10)."
+		inhibit
+		;;
+	resume|thaw)
+		exit 0
+		;;
+esac

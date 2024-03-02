@@ -1,0 +1,7 @@
+# The following file types do not need to be uploaded
+.git
+.vscode
+.DS_Store
+*.swp
+*inf.php
+git_sync*

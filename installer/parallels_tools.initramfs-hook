@@ -1,0 +1,28 @@
+#! /bin/sh -e
+#
+# Parallels Tools for Linux
+#
+# Copyright (c) 1999-2015 Parallels International GmbH.
+# All rights reserved.
+# http://www.parallels.com
+
+PREREQ=
+ARCH=$(uname -m)
+
+prereqs () {
+	echo "$PREREQ"
+}
+
+case $1 in
+prereqs)
+	prereqs
+	exit 0
+	;;
+esac
+
+. /usr/share/initramfs-tools/hook-functions
+
+manual_add_modules prl_tg
+if [ "$ARCH" != "aarch64" ]; then
+	manual_add_modules prl_vid
+fi

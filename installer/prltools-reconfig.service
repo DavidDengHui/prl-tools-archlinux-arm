@@ -1,0 +1,17 @@
+# Parallels Tools for Linux
+#
+# Copyright (c) 2021 Parallels International GmbH.
+# All rights reserved.
+# http://www.parallels.com
+
+[Unit]
+Description=Parallels Tools system reconfiguration service
+Before=display-manager.service
+
+[Service]
+Type=oneshot
+TimeoutSec=0
+ExecStart=/usr/lib/parallels-tools/installer/prltools-reconfig.sh start
+
+[Install]
+WantedBy=multi-user.target
