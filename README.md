@@ -2,8 +2,9 @@
 
 ![About Arch Linux](https://img2.covear.top/2024-02-29-20240229214413.png "About Arch Linux")
 ![2024-03-12-20240312203239](https://img2.covear.top/2024-03-12-20240312203239.png "2024-03-12-20240312203239")
+![2024-03-15-20240315110612](https://img2.covear.top/2024-03-15-20240315110612.png "2024-03-15-20240315110612")
 
-<p style="text-align: center;color: gray;">Arch Linux 系统信息</p>
+<p style="text-align: center;color: gray;">虚拟机系统信息</p>
 
 这是一个为了适配 `Arch Linux ARM` 的 `Parallels Tools` 修改版本，相关运行环境如下：
 
@@ -11,9 +12,11 @@
 |:------:|:-----------------:|:--------------------:|:-----------------------------------------:|
 | 1      | Mac mini 2023     | Apple M2             | macOS Sonoma 14.3.1 (23D60)               |
 | 2      | Parallels Desktop | 19.1.0 (54729)       | Parallels Tools  v19.1.0.54729            |
-| 3      | Arch Linux ARM    | 6.7.6-1-aarch64-ARCH | [More](https://archboot.com/iso/aarch64/) |
+| 3      | Arch Linux ARM    | 6.7.6-1-aarch64-ARCH | [IMAGE](https://archboot.com/iso/aarch64/) |
+| 4      | openSUSE Tumbleweed ARM  | 6.7.7-1-default | [IMAGE](https://download.opensuse.org/tumbleweed/iso/) |
+| 5      | Fedora 39 ARM     | 6.7.9-200.fc39.aarch64 | [IMAGE](https://fedoraproject.org/workstation/download) |
 
-- ❗️ps: 经测试，所有 `6.7.X` 版本的内核都适用。
+- ❗️ps: 经测试，基本上所有 `6.7.X` 版本的内核都适用。
 
 ![About Parallels Desktop](https://img2.covear.top/2024-02-29-20240229215707.png "About Parallels Desktop")
 <p style="text-align: center;color: gray;">Parallels Desktop 软件信息</p>
